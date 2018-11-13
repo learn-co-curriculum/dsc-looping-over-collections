@@ -126,7 +126,7 @@ Note that the range object is marking the starting and ending point, and excludi
 
 
 ```python
-for i in list(range(0, len(countries))):
+for index in list(range(0, len(countries))):
     print(cities[index]+",", countries[index])
 ```
 
@@ -136,7 +136,7 @@ And as we add or subtract countries, we will still be iterating through our list
 ```python
 countries.append('Mexico')
 cities.append('Mexico City')
-for i in list(range(0, len(countries))):
+for index in list(range(0, len(countries))):
     print(cities[index]+",", countries[index])
 ```
 
