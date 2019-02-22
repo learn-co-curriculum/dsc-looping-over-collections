@@ -91,7 +91,7 @@ for index in [0,1,2,3,4,5,6,7]:
     print(cities[index]+",", countries[index])
 ```
 
-Of course, this does not work if we have more number of iterations does not match up with the size of our list.
+Of course, this does not work if our indices do not match up with the size of our list.
 
 
 ```python
@@ -138,6 +138,12 @@ countries.append('Mexico')
 cities.append('Mexico City')
 for index in list(range(0, len(countries))):
     print(cities[index]+",", countries[index])
+```
+
+> Note: More conventionally, these contrived examples would employ the `enumerate()` method, but that is beyond the scope of the current lesson. At some point in the future, examine how this code snippet works:
+```
+for idx, item in enumerate(['A', 'B', 'C']):
+    print(idx, item)
 ```
 
 ## Iterating through different datatypes
