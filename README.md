@@ -208,6 +208,6 @@ for ice_cream_flavor in ice_cream_flavors:
     print('I love ' + ice_cream_flavor + ' ice cream!!')
 ```
 
-### Summary
+## Summary
 
 In this lesson, we learned how to use loops to iterate through a collection of elements. We started with iterating through a list of numbers, and performed the same operation on each number. Then we saw how we can loop through the numbers and have each number be used to access a successive element from a separate list, like `countries`.  We then saw that to ensure that our list of numbers matched the indices of a our other list, we had to use the expression, `for element in list(range(0, len(list)))`. Finally, we introduced a naming convention that is commonly used when naming the variable for our loops when iterating over a collection that is a list of common elements (i.e. `ice_cream_flavor` for a list of `ice_cream_flavors`).
