@@ -45,7 +45,7 @@ Now, the for loop may look a bit confusing at first, so, let's take a closer loo
 
 We can give any name to the variable. The important thing to understand here is **it is the reference** to each **element** in the collection. So, when we print `number`, we are printing an element of the collection `zero_to_three`. 
 
-Every for loop needs to end the first line with a colon `:`. This indicates the start of the **block** of code. The block is simply the code that we want executed in each iteration of our loop. So, if all we want to do is print each element, then the line that prints the element is our block. Our block is indicated by indenting. So the first line after the colon `:` should be indented. When we want to end our block, we simply stop indenting. Any code follwing the for loop will only be executed after the for loop finishes.
+Every for loop needs to end the first line with a colon `:`. This indicates the start of the **block** of code. The block is simply the code that we want executed in each iteration of our loop. So, if all we want to do is print each element, then the line that prints the element is our block. Our block is indicated by indenting. So the first line after the colon `:` should be indented. When we want to end our block, we simply stop indenting. Any code following the for loop will only be executed after the for loop finishes.
 
 > *Remember, the block of code in a for loop is executed the same amount of times as there are elements in the collection.*
 
@@ -82,7 +82,7 @@ So, in the example above, we are still using the elements in the list of numbers
 
 ```python
 countries = ['Croatia', 'USA', 'Argentina', 'France', 'Brazil', 'Japan', 'Vietnam', 'Israel']
-cities = ['Zagreb', 'Distric of Columbia', 'Buenos Aires', 'Paris', 'Rio de Janeiro', 'Tokyo', 'Hanoi', 'Tel Aviv']
+cities = ['Zagreb', 'District of Columbia', 'Buenos Aires', 'Paris', 'Rio de Janeiro', 'Tokyo', 'Hanoi', 'Tel Aviv']
 ```
 
 
