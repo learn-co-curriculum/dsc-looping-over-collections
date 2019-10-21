@@ -6,7 +6,7 @@ Loops allow us to iterate over each element in a collection, like a list. Perhap
 
 ## Objectives
 You will be able to:
-* Use a `for` loop to iterate over a collection
+- Use a `for` loop to iterate over a collection
 
 ## What is a for loop and how do I write one?
 
