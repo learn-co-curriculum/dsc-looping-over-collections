@@ -6,7 +6,7 @@ Loops allow us to iterate over each element in a collection, like a list. Perhap
 
 ## Objectives
 You will be able to:
-* Use loops to iterate over a collection of records
+* Use a `for` loop to iterate over a collection
 
 ## What is a for loop and how do I write one?
 
@@ -37,7 +37,7 @@ In the example above, we are sequentially accessing each index in the list and p
 
 In fact, it may very often be the case that we don't know the length of the collection we are working with. So, writing all this static code for each element becomes not only unmanageable but impossible.
 
-Let's see how we would do the same operation above with a for loop!
+Let's see how we would do the same operation above with a `for` loop!
 
 
 ```python
@@ -57,7 +57,7 @@ Now, the `for` loop may look a bit confusing at first, so, let's take a closer l
 
 We can give any name to the variable. The important thing to understand here is **it is the reference** to each **element** in the collection. So, when we print `number`, we are printing an element of the collection `zero_to_three`. 
 
-Every `for` loop needs to end the first line with a colon `:`. This indicates the start of the **block** of code. The block is simply the code that we want executed in each iteration of our loop. So, if all we want to do is print each element, then the line that prints the element is our block. Our block is indicated by indenting. So the first line after the colon `:` should be indented. When we want to end our block, we simply stop indenting. Any code following the for loop will only be executed after the for loop finishes.
+Every `for` loop needs to end the first line with a colon `:`. This indicates the start of the **block** of code. The block is simply the code that we want executed in each iteration of our loop. So, if all we want to do is print each element, then the line that prints the element is our block. Our block is indicated by indenting. So the first line after the colon `:` should be indented. When we want to end our block, we simply stop indenting. Any code following the `for` loop will only be executed after the `for` loop finishes.
 
 > *Remember, the block of code in a `for` loop is executed the same amount of times as there are elements in the collection.*
 
@@ -280,7 +280,7 @@ for element in different_elements:
 
 Now that we know we can iterate through a list that contains multiple data types, let's explore iterating through a data type that's **not a list**. 
 
-Another collection we commonly will iterate over is a **dictionary**. Dictionaries differ from lists, on a high level, in that elements are **key, value pairs** instead of one single element. So, when we go through each item in a dictionary, we are actually working with a two-part element (with a key & value). Similarly to how we name a variable for the element in a list for a **for** loop, we name a variable for both the **key** and **value** when we iterate over a dictionary. However, in Python, we can't iterate directly over the dictionary, we iterate over the **items** of a dictionary, which are the key-value pairs.  Let's take a look at an example.
+Another collection we commonly will iterate over is a **dictionary**. Dictionaries differ from lists, on a high level, in that elements are **key, value pairs** instead of one single element. So, when we go through each item in a dictionary, we are actually working with a two-part element (with a key & value). Similarly to how we name a variable for the element in a list for a `for` loop, we name a variable for both the **key** and **value** when we iterate over a dictionary. However, in Python, we can't iterate directly over the dictionary, we iterate over the **items** of a dictionary, which are the key-value pairs.  Let's take a look at an example.
 
 
 ```python
