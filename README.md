@@ -1,11 +1,12 @@
-
 # Looping Over Collections
 
 ## Introduction
 Loops allow us to iterate over each element in a collection, like a list. Perhaps we could already do that by writing out a line of code for each element in the collection, but that wouldn't be very efficient, would it? No, not at all. With loops, we can write one line of code that operates on each element in a collection. Pretty cool, right? Let's get started!
 
 ## Objectives
+
 You will be able to:
+
 - Use a `for` loop to iterate over a collection
 
 ## What is a for loop and how do I write one?
