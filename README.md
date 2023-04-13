@@ -139,7 +139,6 @@ for index in [0,1,2,3,4,5,6]:
     Tokyo, Japan
     Hanoi, Vietnam
 
-
 Of course, this does not work if our indices do not match up with the size of our list.
 
 
@@ -157,14 +156,9 @@ for index in [0,1,2,3,4,5,6,7,8,9,10]:
     Hanoi, Vietnam
 
 
-
     ---------------------------------------------------------------------------
 
     IndexError                                Traceback (most recent call last)
-
-    Cell In[11], line 2
-          1 for index in [0,1,2,3,4,5,6,7,8,9,10]:
-    ----> 2     print(cities[index]+",", countries[index])
 
 
     IndexError: list index out of range
@@ -179,11 +173,6 @@ len(countries)
 
 
 
-
-    7
-
-
-
 Then we can turn this length into a successive list of elements in the following way:   
 
 First, create a range object:
@@ -195,11 +184,6 @@ range(0, len(countries))
 
 
 
-
-    range(0, 7)
-
-
-
 And then convert this into a list:
 
 
@@ -207,10 +191,6 @@ And then convert this into a list:
 list(range(0, len(countries)))
 ```
 
-
-
-
-    [0, 1, 2, 3, 4, 5, 6]
 
 
 
@@ -248,7 +228,6 @@ for index in list(range(0, len(countries))):
     Rio de Janeiro, Brazil
     Tokyo, Japan
     Hanoi, Vietnam
-    Mexico City, Mexico
 
 
 > Note: More conventionally, these contrived examples would employ the `enumerate()` method, but that is beyond the scope of the current lesson. At some point in the future, examine how this code snippet works:
