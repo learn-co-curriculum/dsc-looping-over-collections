@@ -91,12 +91,12 @@ In the examples above, we used the elements in our list to perform an operation,
 
 
 ```python
-countries = ['Croatia', 'USA', 'Argentina', 'France', 'Brazil', 'Japan', 'Vietnam', 'Israel']
+countries = ['Croatia', 'USA', 'Argentina', 'France', 'Brazil', 'Japan', 'Vietnam']
 ```
 
 
 ```python
-for index in [0,1,2,3,4,5,6,7]:
+for index in [0,1,2,3,4,5,6]:
     print(index)
     print(countries[index])
 ```
@@ -115,21 +115,19 @@ for index in [0,1,2,3,4,5,6,7]:
     Japan
     6
     Vietnam
-    7
-    Israel
 
 
 So, in the example above, we are still using the elements in the list of numbers from 0 to 7 in our `for` loop, but we are instead using them to access each element of another list. This example is a bit contrived, but perhaps you have two lists that are ordered correctly and have information like the capital cities in one list and the corresponding countries in another. How would we print both of those out in the same line?
 
 
 ```python
-countries = ['Croatia', 'USA', 'Argentina', 'France', 'Brazil', 'Japan', 'Vietnam', 'Israel']
-cities = ['Zagreb', 'District of Columbia', 'Buenos Aires', 'Paris', 'Rio de Janeiro', 'Tokyo', 'Hanoi', 'Tel Aviv']
+countries = ['Croatia', 'USA', 'Argentina', 'France', 'Brazil', 'Japan', 'Vietnam']
+cities = ['Zagreb', 'District of Columbia', 'Buenos Aires', 'Paris', 'Rio de Janeiro', 'Tokyo', 'Hanoi']
 ```
 
 
 ```python
-for index in [0,1,2,3,4,5,6,7]:
+for index in [0,1,2,3,4,5,6]:
     print(cities[index]+",", countries[index])
 ```
 
@@ -140,7 +138,6 @@ for index in [0,1,2,3,4,5,6,7]:
     Rio de Janeiro, Brazil
     Tokyo, Japan
     Hanoi, Vietnam
-    Tel Aviv, Israel
 
 
 Of course, this does not work if our indices do not match up with the size of our list.
@@ -158,7 +155,6 @@ for index in [0,1,2,3,4,5,6,7,8,9,10]:
     Rio de Janeiro, Brazil
     Tokyo, Japan
     Hanoi, Vietnam
-    Tel Aviv, Israel
 
 
 
@@ -166,10 +162,10 @@ for index in [0,1,2,3,4,5,6,7,8,9,10]:
 
     IndexError                                Traceback (most recent call last)
 
-    <ipython-input-9-14e8c74c6ab5> in <module>
+    Cell In[11], line 2
           1 for index in [0,1,2,3,4,5,6,7,8,9,10]:
     ----> 2     print(cities[index]+",", countries[index])
-    
+
 
     IndexError: list index out of range
 
@@ -184,7 +180,7 @@ len(countries)
 
 
 
-    8
+    7
 
 
 
@@ -200,7 +196,7 @@ range(0, len(countries))
 
 
 
-    range(0, 8)
+    range(0, 7)
 
 
 
@@ -214,7 +210,7 @@ list(range(0, len(countries)))
 
 
 
-    [0, 1, 2, 3, 4, 5, 6, 7]
+    [0, 1, 2, 3, 4, 5, 6]
 
 
 
@@ -233,7 +229,6 @@ for index in list(range(0, len(countries))):
     Rio de Janeiro, Brazil
     Tokyo, Japan
     Hanoi, Vietnam
-    Tel Aviv, Israel
 
 
 And as we add or subtract countries, we will still be iterating through our list elements.
@@ -253,7 +248,6 @@ for index in list(range(0, len(countries))):
     Rio de Janeiro, Brazil
     Tokyo, Japan
     Hanoi, Vietnam
-    Tel Aviv, Israel
     Mexico City, Mexico
 
 
@@ -354,7 +348,6 @@ for country in countries:
     Brazil
     Japan
     Vietnam
-    Israel
     Mexico
 
 
